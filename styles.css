@@ -1,0 +1,258 @@
+/* Applique une police de caractères générique à tout le document et définit la couleur du texte en blanc */
+body {
+    font-family: Arial, sans-serif; /* Utilisation de la police Arial, avec une alternative sans-serif */
+    margin: 0; /* Supprime les marges par défaut du body */
+    padding: 0; /* Supprime les espacements internes par défaut */
+    color: #fff; /* Définit la couleur du texte en blanc */
+}
+
+/* Styles pour l'en-tête de la page */
+header {
+    display: flex; /* Utilisation de flexbox pour l'organisation des éléments */
+    justify-content: space-between; /* Répartit l'espace entre les éléments à gauche et à droite */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 2.5rem 4rem; /* Ajoute un espace intérieur de 2.5rem en haut et en bas, et 4rem sur les côtés */
+    background: #1a1a1a; /* Définit un fond sombre */
+    height: 80px; /* Définit une hauteur fixe de 80 pixels */
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style: none; /* Supprime les puces par défaut des listes */
+    padding: 0; /* Supprime le padding par défaut */
+    display: flex; /* Affiche les éléments de la liste sur une même ligne */
+}
+
+/* Styles pour les éléments de la liste dans le header */
+nav ul li {
+    margin: 0 25px; /* Ajoute un espacement horizontal de 25px entre les éléments */
+}
+
+/* Styles pour les liens de navigation */
+nav ul li a {
+    color: #00d9ff; /* Définit une couleur bleu cyan pour les liens */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    font-weight: bold; /* Rend le texte des liens en gras */
+    font-size: 1.1rem; /* Définit la taille de la police à 1.1rem */
+}
+
+/* Hero/About Section */
+/* Section principale de la page, souvent utilisée pour présenter un message clé ou une introduction */
+.hero {
+    background-color: #3730a3; /* Définit une couleur de fond violette */
+    min-height: 90vh; /* Définit une hauteur minimale de 90% de la hauteur de la fenêtre */
+    display: flex; /* Utilise flexbox pour l'organisation des éléments */
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: space-between; /* Répartit l'espace entre les éléments */
+    padding: 6rem 8rem; /* Ajoute un espace intérieur de 6rem en haut et en bas, et 8rem sur les côtés */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+}
+
+/* Styles pour le texte de la section hero */
+.hero-text {
+    max-width: 600px; /* Limite la largeur maximale du texte à 600px */
+    text-align: center; /* Centre le texte horizontalement */
+}
+
+/* Styles pour le titre (h1) dans la section hero */
+.hero-text h1 {
+    font-size: 3.5rem; /* Définit la taille de la police à 3.5rem */
+    margin: 0 0 2rem 0; /* Ajoute une marge inférieure de 2rem */
+    line-height: 1.2; /* Définit une hauteur de ligne de 1.2 */
+}
+
+/* Styles pour les paragraphes dans la section hero */
+.hero-text p {
+    font-size: 1.2rem; /* Définit la taille de la police à 1.2rem */
+    line-height: 1.6; /* Définit une hauteur de ligne de 1.6 */
+    margin-bottom: 2rem; /* Ajoute une marge inférieure de 2rem */
+}
+
+/* Styles pour les éléments span dans le titre (h1) de la section hero */
+.hero-text h1 span {
+    color: #00d9ff; /* Définit la couleur du texte en bleu cyan */
+}
+
+/* Styles pour l'image dans la section hero */
+.hero img {
+    width: 100%; /* Définit la largeur de l'image à 100% de son conteneur */
+    max-width: 400px; /* Limite la largeur maximale de l'image à 400px */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    border-radius: 50%; /* Rend l'image circulaire */
+    object-fit: cover; /* Couvre l'ensemble de l'espace disponible sans déformer l'image */
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.3); /* Ajoute une ombre portée autour de l'image */
+}
+
+/* Styles pour le bouton d'appel à l'action (CTA) */
+.cta-button {
+    background: #00d9ff; /* Définit une couleur de fond bleu cyan */
+    border: none; /* Supprime les bordures par défaut */
+    color: #fff; /* Définit la couleur du texte en blanc */
+    padding: 15px 30px; /* Ajoute un espace intérieur de 15px en haut et en bas, et 30px sur les côtés */
+    cursor: pointer; /* Change le curseur en pointeur lors du survol */
+    font-size: 1.1rem; /* Définit la taille de la police à 1.1rem */
+    border-radius: 5px; /* Ajoute des coins arrondis de 5px */
+    margin-top: 2rem; /* Ajoute une marge supérieure de 2rem */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+}
+
+/* Effets de survol pour le bouton d'appel à l'action (CTA) */
+.cta-button:hover {
+    background: #00bfff; /* Change la couleur de fond en bleu clair lors du survol */
+    transform: scale(1.05); /* Agrandit légèrement le bouton lors du survol */
+    transition: background 0.3s ease, transform 0.3s ease; /* Ajoute une transition douce pour les effets de survol */
+}
+
+/* Skills Section */
+.skills {
+    background-color: #2c2c2c;
+    padding: 8rem 4rem;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.skill-card {
+    background: #3a3a3a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Projects Section */
+#projects {
+    background-color: #581c87;
+    text-align: center;
+    padding: 8rem 4rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+.project {
+    background: #1e1e1e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.project img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.footer-socials a img {
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-socials a img:hover {
+    transform: scale(1.2);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+/* Media Queries for Responsive Design */
+/* @media query pour adapter le design sur les écrans de petite taille (max-width: 768px) */
+@media (max-width: 768px) {
+    
+    /* Modification de la disposition du header */
+    header {
+        flex-direction: column; /* Change la direction de l'alignement des éléments du header (de horizontal à vertical) */
+        height: auto; /* Laisse la hauteur du header s'ajuster automatiquement en fonction du contenu */
+        padding: 1rem; /* Réduit l'espacement intérieur du header à 1rem (contre 2.5rem initialement) pour s'adapter aux petits écrans */
+    }
+
+    /* Modification de la disposition de la navigation */
+    nav ul {
+        flex-direction: column; /* Change l'orientation des éléments du menu de horizontal à vertical */
+        align-items: center; /* Centre les éléments du menu horizontalement */
+    }
+
+    /* Espacement entre les éléments de la liste dans la navigation */
+    nav ul li {
+        margin: 10px 0; /* Ajoute une marge verticale de 10px entre chaque élément du menu */
+    }
+
+    /* Ajustement du padding de la section hero pour plus de flexibilité */
+    .hero {
+        padding: 2rem; /* Réduit l'espacement intérieur de la section hero à 2rem pour que le contenu tienne bien sur des petits écrans */
+    }
+
+    /* Réduction de la taille du titre dans la section hero */
+    .hero-text h1 {
+        font-size: 2.5rem; /* Réduit la taille du titre (h1) à 2.5rem pour qu'il soit plus lisible sur les petits écrans */
+    }
+
+    /* Réduction de la taille du texte dans la section hero */
+    .hero-text p {
+        font-size: 1rem; /* Réduit la taille de la police des paragraphes à 1rem, pour une meilleure lisibilité */
+    }
+
+    /* Ajustement du padding de la section des compétences */
+    .skills {
+        padding: 4rem 2rem; /* Réduit le padding pour donner plus d'espace au contenu tout en restant aéré */
+    }
+
+    /* Modification du nombre de colonnes dans la grille des projets */
+    .project-grid {
+        grid-template-columns: 1fr; /* Définit une seule colonne pour les projets sur les petits écrans, chaque projet occupe toute la largeur */
+    }
+
+    /* Ajustement de la taille des images des projets */
+    .project img {
+        height: auto; /* Permet aux images des projets de conserver une hauteur proportionnelle à leur largeur sur les petits écrans */
+    }
+}
+
